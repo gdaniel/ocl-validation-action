@@ -1,0 +1,19 @@
+name: 'OCL Validation'
+description: 'Validate models against OCL constraints'
+inputs:
+    metamodel:
+      description: 'Path to the metamodel file'
+      required: true
+    model:
+      description: 'Path to the model file'
+      required: true
+    constraints:
+      description: 'Path to the constraints file'
+      required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.metamodel }}
+    - ${{ inputs.model }}
+    - ${{ inputs.constraints}}
