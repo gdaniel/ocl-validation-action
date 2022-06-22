@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     name: OCL Validation
     steps:
-    	# Checkout the repository so the OCL Validation Action can access its content
+    # Checkout the repository so the OCL Validation Action can access its content
       - uses: actions/checkout@v2
       - name: OCL Validation Action
         uses: gdaniel/ocl-validation-action@v2
