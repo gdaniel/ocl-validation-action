@@ -25,7 +25,7 @@ jobs:
     name: OCL Validation
     steps:
     # Checkout the repository so the OCL Validation Action can access its content
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: OCL Validation Action
         uses: gdaniel/ocl-validation-action@v2
         with:
